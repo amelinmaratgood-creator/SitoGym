@@ -1,0 +1,665 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background: rgb(201, 199, 199);
+}
+
+@keyframes fadelnUp {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        filter: blur(0);
+    }
+}
+
+.meny {
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+
+.inp1 {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    color: rgb(255, 255, 255);
+    border-color: white;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 30px;
+    backdrop-filter: blur(10px);
+    background: none;
+}
+
+.inp1:hover {
+    transform: scale(1.1);
+    background: none;
+    color: rgb(74, 133, 249);
+    transition: transform 1s ease, color 1s ease, background-color 1s ease, color 1s ease, box-shabow 1s ease;
+    box-shadow: 0 0 10px white;
+    border: none;
+}
+
+.imgBox {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    margin-bottom: 200px;
+    box-shadow: 0 0 20px black;
+    opacity: 0;
+    transform: rotateY(20px);
+    fill: blur(5px);
+    animation: fadelnUp 1.5s ease forwards;
+}
+
+.imgBox video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.pow {
+    color: rgb(74, 133, 249);
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-shadow: 0 0 8px black;
+}
+
+.parText {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-shadow: 0 0 5px black;
+    margin-top: 200px;
+    margin-left: 540px;
+}
+
+.stron {
+    margin-left: 75px;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    color: rgb(74, 133, 249);
+}
+
+.ButScriv {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    border-radius: 30px;
+    background: none;
+    border-color: white;
+    color: white;
+    margin-left: 100px;
+}
+
+.ButScriv:hover {
+    color: rgb(74, 133, 249);
+    box-shadow: 0 0 15px white;
+    border: none;
+    transform: scale(1.1);
+    transition: transform 1s ease, box-shadow 0s ease, color 1s ease;
+}
+
+.motiv {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: -80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dav {
+    width: 350px;
+    height: 500px;
+    margin-top: -140px;
+}
+
+.dav:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
+}
+
+.dav1 {
+    width: 350px;
+    height: 500px;
+    margin-top: -140px;
+}
+
+.dav1:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
+}
+
+.dav2 {
+    width: 350px;
+    height: 500px;
+    margin-top: -140px;
+}
+
+.bam1 {
+    width: 370px;
+    height: 500px;
+    margin-top: -140px;
+}
+
+.bam1:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
+}
+
+.dav2:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
+}
+
+
+.conCont {
+    background-image: url(img/mkmkmkm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin-left: 200px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+.conCont.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.conCont1 {
+    background-image: url(img/нгнгггн.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 200px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 5px black;
+    padding: 20px;
+    margin-top: 60px;
+    height: 700px;
+}
+
+.conCont1.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.conCont2 {
+    background-image: url(img/гшшгш.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 200px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px black;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-top: 60px;
+    height: 700px;
+}
+
+.conCont2.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.conCont3 {
+    background-image: url(img/жддждж.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 200px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 5px black;
+    padding: 20px;
+    margin-top: 60px;
+    height: 700px;
+}
+
+.conCont3.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.inv {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    border-radius: 30px;
+    background: rgba(white);
+    border: none;
+    box-shadow: 0 0 10px black;
+    color: rgb(0, 0, 0);
+    margin-left: 840px;
+    margin-top: 250px;
+}
+
+.inv:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px white;
+    background-color: rgba(87, 84, 84, 0);
+    border: none;
+    transform: scale(1.1);
+    transition: transform 1s ease, box-shadow 0.5s ease, color 1s ease, background-color 1s ease;
+}
+
+.inv1 {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    border-radius: 30px;
+    background: rgba(white);
+    border: none;
+    box-shadow: 0 0 10px black;
+    color: rgb(0, 0, 0);
+    margin-left: 850px;
+    margin-top: 250px ;
+}
+
+.inv1:hover {
+    color: rgb(255, 253, 253);
+    box-shadow: 0 0 15px white;
+    background-color: rgba(87, 84, 84, 0);
+    border: none;
+    transform: scale(1.1);
+    transition: transform 1s ease, box-shadow 0.5s ease, color 1s ease, background-color 1s ease;
+}
+
+.inv2 {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    border-radius: 30px;
+    background: rgba(white);
+    border: none;
+    box-shadow: 0 0 10px black;
+    color: rgb(0, 0, 0);
+    margin-left: 850px;
+    margin-top: 250px;
+}
+
+.inv2:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px white;
+    background-color: rgba(87, 84, 84, 0);
+    border: none;
+    transform: scale(1.1);
+    transition: transform 1s ease, box-shadow 0.5s ease, color 1s ease, background-color 1s ease;
+}
+
+.inv9 {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    border-radius: 30px;
+    background: rgba(white);
+    box-shadow: 0 0 10px black;
+    color: rgb(0, 0, 0);
+    margin-left: 850px;
+    margin-top: 250px;
+}
+
+.inv9:hover {
+    box-shadow: 0 0 8px black;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 15px white;
+    background-color: rgba(87, 84, 84, 0);
+    transform: scale(1.1);
+    transition: transform 1s ease, box-shadow 0.5s ease, color 1s ease, background-color 1s ease;
+}
+
+.para {
+    color: rgb(74, 133, 249);
+    font-size: 70px;
+    margin-left: 820px;
+    margin-top: 100px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+}
+
+.para1 {
+    color: rgb(74, 133, 249);
+    font-size: 70px;
+    margin-left: 760px;
+    margin-top: 30px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    margin-top: 90px;
+}
+
+.offerte {
+    color: rgb(0, 0, 0);
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 10px black;
+    letter-spacing: 10px;
+    margin-top: -100px;
+    box-shadow: 0 0 px rgb(0, 0, 0);
+
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+    transition: all 0.8s ease;
+}
+
+.offerte.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.prot {
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 60px;
+    background: linear-gradient(to right, black, black, gray, white);
+    padding: 10px;
+}
+
+.myv {
+    margin-left: 1100px;
+    margin-top: -700px;
+    color: rgb(74, 133, 249);
+}
+
+.liven {
+    margin-left: 20px;
+}
+
+.inv3 {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    box-shadow: 0 0 10px black;
+    color: rgb(0, 0, 0);
+    margin-left: 1290px;
+    margin-top: 490px;
+}
+
+.inv3:hover {
+    color: rgb(74, 133, 249);
+    box-shadow: 0 0 15px black;
+    background-color: rgba(87, 84, 84, 0);
+    border: none;
+    transform: scale(1.1);
+    transition: transform 1s ease, box-shadow 0.5s ease, color 1s ease, background-color 1s ease;
+}
+
+.prot1 {
+    height: 250px;
+    width: 250px;
+}
+
+.prodot {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 30px;
+    justify-content: center;
+    margin: 140px;
+    background: linear-gradient(to right, white, gray, white, gray, white);
+    padding: 20px;
+    margin-top: 100px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+    transition: all 0.8s ease;
+}
+
+.prodot.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.protein,
+.geiner,
+.creatin {
+    box-shadow: 0 0 5px black;
+    border-radius: 8px;
+    width: 250px;
+    height: 400px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 25px;
+
+}
+
+
+.protein:hover,
+.geiner:hover,
+.creatin:hover {
+    box-shadow: 0 0 8px rgb(74, 133, 249);
+    background-color: rgb(222, 220, 220);
+    transition: box-shadow 0.8s ease, background-color 0.8s ease;
+}
+
+.num1 {
+    margin-left: 10px;
+    text-shadow: 0 0 1px black;
+}
+
+.piu1 {
+    width: 30px;
+    height: 30px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+footer {
+    margin-top: 200px;
+    color: white;
+    font-family: 20px;
+    padding: 25px;
+    background: black;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+}
+
+.hreff {
+    color: white;
+}
+
+.contentSop {
+    background-color: rgb(97, 96, 96);
+}
+/*.contentSop-div {
+    background-image: url(img/bagA.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 200px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.2s;
+}
+
+.contentSop.scrolling {
+    transform: translateY(10px);
+}*/
+
+.body1 {
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(201, 199, 199);
+    opacity: 0;
+    transform: rotateY(20px);
+    fill: blur(5px);
+    animation: fadelnUp 1.5s ease forwards;
+}
+
+@keyframes fadelnUp {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        filter: blur(0);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.torn {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    color: rgb(255, 255, 255);
+    border-color: white;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 30px;
+    backdrop-filter: blur(10px);
+    background: none;
+}
+
+.torn:hover {
+    transform: scale(1.1);
+    background: none;
+    color: rgb(74, 133, 249);
+    transition: transform 1s ease, color 1s ease, background-color 1s ease, color 1s ease, box-shabow 1s ease;
+    box-shadow: 0 0 10px white;
+    border: none;
+}
+
+
+.inbut {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 0 8px white;
+}
+
+.grosso {
+    display: grid;
+    justify-content: center;
+    color: white;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 40px;
+    text-shadow: 0 0 5px white;
+}
+
+.grosso2 {
+    margin-left: 70px;
+    color: rgb(74, 133, 249);
+    text-shadow: 0 0 0px black;
+}
+
+.nytri {
+    font-size: 70px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    display: grid;
+    justify-content: center;
+    margin-top: 200px;
+    text-shadow: 0 0 5px black;
+    letter-spacing: 10px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+    transition: all 0.8s ease;
+}
+
+.nytri.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.forza {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 8px black;
+    margin: 200px;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 50px;
+    color: rgb(74, 133, 249);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), gray, white);
+}
+
+.ogni1 {
+    width: 520px;
+    height: 520px;
+}
+
+.forOg {
+    margin-right: 20px;
+    margin-top: 20px;
+    text-shadow: 0 0 1px black;
+}
+
+.chi {
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    height: 360px;
+}
+
+.ver {
+    color: rgb(74, 133, 249);
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 320px;
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    text-shadow: 0 0 20px rgb(74, 133, 249);
+
+    opacity: 0;
+    transform: rotateY(20px);
+    fill: blur(5px);
+    animation: fadelnUp 4s ease forwards, text-shadow 16s ease forwards;
+}
+
+@keyframes fadelnUp {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        filter: blur(0);
+    }
+}
+
+.torn1 {
+    color: white;
+    font-family: 'Impact', 'Arial Black', 'Oswald', sana-serif;
+    font-size: 15px;
+    background: none;
+    border: none;
+    margin: 15px;
+}
+
+    .torn1:hover {    
+}
